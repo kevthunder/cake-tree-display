@@ -1,0 +1,54 @@
+table tr td.treeDisplayColumn{
+	text-align: left;
+	position: relative;
+	padding-left: 10px;
+}
+	table tr td.treeDisplayColumn .treeBranches{
+		/*position:absolute;*/
+		/*top: 0;*/
+		height: 30px;
+		margin: -4px 0 -4px 0;
+		/*bottom: 0;*/
+		display:block;
+		float:left;
+		margin-right:10px;
+	}
+		table tr td.treeDisplayColumn .treeBranches:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+		* html              table tr td.treeDisplayColumn .treeBranches { zoom: 1; } /* IE6 */
+		*:first-child+html  table tr td.treeDisplayColumn .treeBranches{ zoom: 1; } /* IE7 */
+		
+			table tr td.treeDisplayColumn .treeBranches .tip{
+				height: 100%;
+				float:left;
+				width: 13px;
+				display:block;
+				background: url('../img/tree_branch_tip.png') center top no-repeat;
+			}
+			table tr td.treeDisplayColumn .treeBranches .branch{
+				height: 100%;
+				float:left;
+				width: 13px;
+				display:block;
+				background: url('../img/tree_branch.png') center top no-repeat;
+			}
+			table tr td.treeDisplayColumn .treeBranches .line{
+				height: 100%;
+				float:left;
+				width: 9px;
+				display:block;
+				background: url('../img/tree_branch_line.png') center center repeat-y;
+			}
+			table tr td.treeDisplayColumn .treeBranches .empty{
+				height: 100%;
+				float:left;
+				width: 9px;
+				display:block;
+				background: none;
+			}
